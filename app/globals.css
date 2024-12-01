@@ -70,3 +70,93 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+   /* ===== TYPOGRAPHY */
+   .h1 {
+    @apply text-[34px] leading-[42px] font-bold;
+  }
+  .h2 {
+    @apply text-[24px] leading-[36px] font-bold;
+  }
+  .h3 {
+    @apply text-[20px] leading-[28px] font-semibold;
+  }
+  .h4 {
+    @apply text-[18px] leading-[20px] font-medium;
+  }
+  .h5 {
+    @apply text-[16px] leading-[24px] font-semibold;
+  }
+  .subtitle-1 {
+    @apply text-[16px] leading-[24px] font-medium;
+  }
+  .subtitle-2 {
+    @apply text-[14px] leading-[20px] font-semibold;
+  }
+  .body-1 {
+    @apply text-[16px] leading-[24px] font-normal;
+  }
+  .body-2 {
+    @apply text-[14px] leading-[20px] font-normal;
+  }
+  .button {
+    @apply text-[14px] leading-[20px] font-medium;
+  }
+  .caption {
+    @apply text-[12px] leading-[16px] font-normal;
+  }
+  .overline {
+    @apply text-[10px] leading-[14px] font-normal;
+  }
+  /* AuthForm */
+  .auth-form {
+    @apply flex max-h-[800px] w-full max-w-[580px] flex-col justify-center space-y-6 transition-all lg:h-full lg:space-y-8 !important;
+  }
+  .form-title {
+    @apply h1 text-center text-light-100 md:text-left !important;
+  }
+  .form-submit-button {
+    @apply h-[66px] !important;
+  }
+  .error-message {
+    @apply mx-auto w-fit rounded-xl px-8 py-4 text-center !important;
+  }
+  .shad-no-focus {
+    @apply outline-none ring-offset-transparent focus:ring-transparent focus:ring-offset-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
+  }
+  .shad-input {
+    @apply border-none shadow-none p-0 shad-no-focus  !important;
+  }
+
+  .shad-form-item {
+    @apply flex h-[78px] flex-col justify-center rounded-xl border border-lime-800 px-4 shadow-destructive;
+  }
+  .shad-form-label {
+    @apply text-foreground pt-2 w-full !important;
+  }
+  .shad-form-message {
+    @apply text-red-500 ml-4 !important;
+  }
+
+    /* Sidebar */
+    .sidebar {
+      @apply remove-scrollbar hidden h-screen w-[90px] flex-col overflow-auto px-5 py-7 sm:flex lg:w-[280px] xl:w-[325px] !important;
+    }
+    .sidebar-nav {
+      @apply h5 mt-9 flex-1 gap-1 text-foreground !important;
+    }
+    .sidebar-nav-item {
+      @apply flex text-foreground gap-4 rounded-xl lg:w-full justify-center lg:justify-start items-center h5 lg:px-[30px] h-[52px] lg:rounded-full !important;
+    }
+    .sidebar-user-info {
+      @apply mt-4 flex items-center justify-center gap-2 rounded-full bg-foreground/10 p-1 text-foreground lg:justify-start lg:p-3 !important;
+    }
+    .sidebar-user-avatar {
+      @apply aspect-square w-10 rounded-full object-cover !important;
+    }
+  
+    .shad-active {
+      @apply bg-foreground text-white shadow-drop-2 !important;
+    }
+}
